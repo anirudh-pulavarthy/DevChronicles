@@ -1,6 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 1rem 2rem;
     // padding: 1rem 15vw;
@@ -34,14 +35,20 @@
       padding: 0.75rem 1.25rem;
     }
 
-    .desktop-nav {
+    nav.desktop-nav {
       display: none;
     }
   
     .hamburger {
+      border: 2px dashed red;
       display: block;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: inherit;
+      cursor: pointer;
     }
-  
+
     .right {
       gap: 1rem;
   
@@ -154,16 +161,6 @@
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(2px);
     z-index: 1500;
-  }
-
-  @media (max-width: 768px) {
-    .desktop-nav {
-      display: none;
-    }
-  
-    .hamburger {
-      display: block;
-    }
   }
   
   .right {
