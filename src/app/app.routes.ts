@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { ResumeComponent } from './pages/resume/resume.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { HeroComponent } from './components/hero/hero.component';
+// import { HomeComponent } from './pages/home/home.component';
+// import { ProjectsComponent } from './pages/projects/projects.component';
+// import { ResumeComponent } from './pages/resume/resume.component';
+// import { ContactComponent } from './pages/contact/contact.component';
+// import { HeroComponent } from './components/hero/hero.component';
 
 export const routes: Routes = [
   {
@@ -16,6 +16,26 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/projects/projects.component').then((m) => m.ProjectsComponent),
   },
+  {
+    path: 'resume',
+    loadComponent: () =>
+      import('./pages/resume/resume.component').then((m) => m.ResumeComponent),
+  },
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./pages/contact/contact.component').then((m) => m.ContactComponent),  
+  },
+  {
+    path: 'about',
+    loadComponent: () =>
+      import('./pages/about-me/about-me.component').then((m) => m.AboutMeComponent),
+  },
+  { path: 'about-me', redirectTo: 'about', pathMatch: 'full' },
+  {
+    path: '**',
+    redirectTo: '',
+  }
 ]
 
 // export const routes: Routes = [
