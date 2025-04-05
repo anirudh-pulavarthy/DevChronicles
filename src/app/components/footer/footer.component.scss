@@ -86,16 +86,26 @@
       .footer-content {
         flex-direction: column;
         align-items: center;
-        gap: 0.75rem;
         text-align: center;
-        white-space: normal;
+        gap: 1rem;
+        padding: 1rem;
       }
-  
+    
       .footer-left,
       .footer-right {
         flex-wrap: wrap;
         justify-content: center;
       }
-    }
+    
+      .footer-left a {
+        justify-content: center;
+        gap: 0.25rem;
+        font-size: 0.9rem;
+      }
+    
+      .footer-right {
+        font-size: 0.75rem;
+      }
+    }    
   }
   

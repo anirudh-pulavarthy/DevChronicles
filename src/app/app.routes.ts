@@ -3,15 +3,28 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
-
+import { HeroComponent } from './components/hero/hero.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '' }
-];
+  {
+    path: '',
+    loadComponent: () =>
+      import('./pages/home/home.component').then((m) => m.HomeComponent),
+  },
+  {
+    path: 'projects',
+    loadComponent: () =>
+      import('./pages/projects/projects.component').then((m) => m.ProjectsComponent),
+  },
+]
+
+// export const routes: Routes = [
+//   { path: '', component: HeroComponent },
+//   { path: 'projects', component: ProjectsComponent },
+//   { path: 'resume', component: ResumeComponent },
+//   { path: 'contact', component: ContactComponent },
+//   { path: '**', redirectTo: '' }
+// ];
 
 // Things that I learned:
 // 

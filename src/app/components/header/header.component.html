@@ -7,8 +7,13 @@
        </span> -->
        <a routerLink="/" class="logo-text">A P</a>
     </div>
+
+    <!-- Display Hamburger icon (for mobiles and small view ports) -->
+    <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+      <i class="fas" [ngClass]="isMenuOpen ? 'fa-xmark' : 'fa-bars'"></i>
+    </button>
   
-    <nav class="right">
+    <!-- <nav class="right">
       <a routerLink="/" routerLinkActive="active">Home</a>
       <a routerLink="/projects" routerLinkActive="active">Projects</a>
       <a routerLink="/resume" routerLinkActive="active">About Me</a>
@@ -16,6 +21,31 @@
       <button class="theme-toggle" (click)="toggleDarkMode()" title="Toggle Dark Mode">
         <i class="fas" [ngClass]="isDark ? 'fa-sun' : 'fa-moon'"></i>
       </button>
+    </nav> -->
+
+     <!-- Desktop nav -->
+    <nav class="right desktop-nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/resume" routerLinkActive="active">About Me</a>
+      <button class="theme-toggle" (click)="toggleDarkMode()" title="Toggle Dark Mode">
+        <i class="fas" [ngClass]="isDark ? 'fa-sun' : 'fa-moon'"></i>
+      </button>
     </nav>
+
+    <!-- Mobile nav menu -->
+    <!-- Overlay (only when menu is open) -->
+    <div *ngIf="isMenuOpen" class="mobile-nav-overlay" (click)="toggleMenu()"></div>
+
+    <!-- Slide-in Nav -->
+    <nav class="mobile-nav" [class.open]="isMenuOpen">
+      <a routerLink="/" (click)="closeMenu()">Home</a>
+      <a routerLink="/projects" (click)="closeMenu()">Projects</a>
+      <a routerLink="/resume" (click)="closeMenu()">About Me</a>
+      <button class="theme-toggle" (click)="toggleDarkMode()" title="Toggle Dark Mode">
+        <i class="fas" [ngClass]="isDark ? 'fa-sun' : 'fa-moon'"></i>
+      </button>
+    </nav>
+
   </header>
   
