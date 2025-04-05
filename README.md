@@ -1,6 +1,7 @@
 # DevChronicles
-Chronicles of my dev journey — an Angular app for showcasing academic and professional work.
 =======
+
+Visit the website at [https://anirudh-pulavarthy.github.io/DevChronicles/](https://anirudh-pulavarthy.github.io/DevChronicles/).
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
