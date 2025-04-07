@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
-  roles = ['Developer', 'Speed Cuber', 'Researcher'];
+  roles = ['Developer', 'Data Analyst', 'CompSci Grad', 'Speed Cuber', 'Tinkerer'];
   currentRoleIndex = 0;
   currentRole = this.roles[0];
 
