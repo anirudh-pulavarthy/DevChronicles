@@ -9,22 +9,22 @@ export interface Project {
   
   export const PROJECTS: Project[] = [
     {
-      title: 'Flamethrower Game – Rust & Macroquad',
-      description: '2D real-time game with custom particle physics in Rust.',
-      link: 'https://github.com/anirudh-pulavarthy',
-      tags: ['Rust', 'Game Dev']
-    },
-    {
       title: 'Computational Topology – Zigzag Persistence',
-      description: 'Persistent cycle analysis using levelset filtrations in Python + GUDHI.',
-      link: 'https://github.com/anirudh-pulavarthy',
-      tags: ['Python', 'Topology', 'Research']
+      description: 'Persistent cycle analysis using levelset filtrations',
+      link: 'https://github.com/taohou01/LvlsetPersCyc',
+      tags: ['Python', 'TDA', 'Computational Geometry', 'GUDHI']
     },
     {
-      title: 'Wine Quality Prediction – ML',
+      title: 'FlameThrower Game',
+      description: '2D real-time game with custom particle physics.',
+      link: 'https://github.com/anirudh-pulavarthy/FlameThrower',
+      tags: ['Rust', 'Game Development', 'Macroquad']
+    },
+    {
+      title: 'Wine Quality Prediction',
       description: 'AdaBoost + Gradient Boosting to predict wine quality from physicochemical properties.',
       link: 'https://github.com/anirudh-pulavarthy',
-      tags: ['Machine Learning', 'Python']
+      tags: ['Machine Learning', 'Python', 'Scikit-learn']
     }
   ];
   
