@@ -23,7 +23,7 @@ export interface Project {
     {
       title: 'Wine Quality Prediction',
       description: 'AdaBoost + Gradient Boosting to predict wine quality from physicochemical properties.',
-      link: 'https://github.com/anirudh-pulavarthy',
+      link: 'https://github.com/anirudh-pulavarthy/WineQualityAnalysis',
       tags: ['Machine Learning', 'Python', 'Scikit-learn']
     }
   ];
