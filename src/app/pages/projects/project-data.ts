@@ -25,6 +25,12 @@ export interface Project {
       description: 'AdaBoost + Gradient Boosting to predict wine quality from physicochemical properties.',
       link: 'https://github.com/anirudh-pulavarthy/WineQualityAnalysis',
       tags: ['Machine Learning', 'Python', 'Scikit-learn']
+    },
+    {
+      title: 'Car Evaluation',
+      description: 'Predicting car acceptability using Random Forests, Gradient Boosting and applying SMOTE analysis.',
+      link: 'https://github.com/anirudh-pulavarthy/Car-Evaluation-using-SMOTE',
+      tags: ['Python', 'SMOTE', 'Random Forests', 'Gradient Boosting']
     }
   ];
   
