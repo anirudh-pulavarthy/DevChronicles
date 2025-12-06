@@ -17,6 +17,6 @@ export class HeroComponent {
     setInterval(() => {
       this.currentRoleIndex = (this.currentRoleIndex + 1) % this.roles.length;
       this.currentRole = this.roles[this.currentRoleIndex];
-    }, 1250); // Change every 1.75 seconds
+    }, 1250); // Change every 1.25 seconds
   }
 }
